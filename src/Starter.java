@@ -5,7 +5,7 @@ public class Starter {
         //Days someDay = new Days(); - tak sie nie da!
 
         System.out.println(today.isWeekend());
-        
+
         switch (today){
             case WTOREK:
                 System.out.println("Czy jest dzis weekend? " + today.isWeekend());
@@ -13,6 +13,13 @@ public class Starter {
             case SOBOTA:
                 System.out.println("WOLNE!");
                 break;
+        }
+
+
+        for (Weather weather : Weather.values()) {
+            if(weather.getAverageTemp() > 0){
+                System.out.println(weather);
+            }
         }
     }
 }
