@@ -1,13 +1,17 @@
 public enum Days {
-    PONIEDZIALEK(false),
-    WTOREK(false),
-    SRODA(false),
-    CZWARTEK(false),
-    PIATEK(false),
+    PONIEDZIALEK(),
+    WTOREK(),
+    SRODA(),
+    CZWARTEK(),
+    PIATEK(),
     SOBOTA(true),
     NIEDZIELA(true);
 
     private boolean isWeekend;
+
+    Days(){
+        this(false);
+    }
 
     Days(boolean isWeekend){
         this.isWeekend = isWeekend;
