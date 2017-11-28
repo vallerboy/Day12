@@ -4,6 +4,12 @@ public class Starter {
         Days today = Days.WTOREK;
         //Days someDay = new Days(); - tak sie nie da!
 
+        Weather weather = Weather.SNOWY;
+        weather.setAverageTemp(10);
+
+        System.out.println("AS: " + weather.getAverageTemp());
+        System.out.println("AS: " + Weather.SNOWY.getAverageTemp());
+
         System.out.println(today.isWeekend());
 
         switch (today){
@@ -16,10 +22,10 @@ public class Starter {
         }
 
 
-        for (Weather weather : Weather.values()) {
-            if(weather.getAverageTemp() > 0){
-                System.out.println(weather);
-            }
-        }
+//        for (Weather weather : Weather.values()) {
+//            if(weather.getAverageTemp() > 0){
+//                System.out.println(weather);
+//            }
+//        }
     }
 }

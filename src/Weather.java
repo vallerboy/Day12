@@ -1,5 +1,5 @@
 public enum Weather {
-    SUNNY(25, "its hot"),
+       SUNNY(25, "its hot"),
     SNOWY(-10, "its cold"),
     RAINY(10, "its ok");
 
@@ -17,5 +17,9 @@ public enum Weather {
 
     public String getDesc() {
         return desc;
+    }
+
+    public void setAverageTemp(int averageTemp) {
+        this.averageTemp = averageTemp;
     }
 }
